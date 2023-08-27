@@ -5,7 +5,49 @@ secondary color:
 */
 
 
-body {
+
+header {
+    position: fixed
+    width= 100%
+    background-color: greenyellow;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.3)  ; -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.3)  ; -moz-box-shadow: 0 0 35px rgba(0, 0, 0, 0.3)  ; 
+  }
+
+main {
+    padding-top: 20px;
+  }
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+nav > ul > li {
+    display: inline-block;
+  }
+
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+  }
+
+selector {
+    margin: 0 auto;
+  }
+
+
+
+* {
+    box-sizing: border-box;
+  }
+
+
+
+  body {
     background-color: lightgray;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 16px;
@@ -21,6 +63,7 @@ h1, h2, h3, h4, {
 h1 {
     font-size: 2.75em;
     font-weight: 400;
+    text-align: center;
   }
   
   h2 {
@@ -88,4 +131,41 @@ h1 {
   .button.contact:hover {
     background-color: #FF7A00;
     color: #ffffff;
+  }
+
+  
+
+  /* Layout styling */
+
+  .container {
+    padding: 0 15px;
+  }
+
+  #contact .container {
+    padding: 0;
+  }
+
+  .row {
+    margin: 25px 0;
+  }
+
+  #hero h1 {
+    text-align: left;
+    margin: 0;
+    padding: 0.67em 0;
+  }
+
+  #hero {
+    background-color: greenyellow;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+
+  .icon {
+    max-width: 20px;
   }
