@@ -25,7 +25,7 @@ src: url('../kaffee/YanoneKaffeesatz-Regular.ttf') format('truetype');
 header {
 position: fixed;
 width: 100%;
-background-color: greenyellow;
+background-color: #ddaaf5;
 text-align: center;
 padding: 10px 0;
 box-shadow: 0 0 35px rgba(0, 0, 0, 0.3)  ; -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.3)  ; -moz-box-shadow: 0 0 35px rgba(0, 0, 0, 0.3)  ; 
@@ -33,13 +33,14 @@ z-index: 11;
 }
 
 main {
-padding: top 99px;px;
+padding-top: 95px;
 }
 
 nav > ul {
 list-style-type: none;
 padding: 0;
 }
+
 
 nav > ul > li {
 display: inline-block;
@@ -52,6 +53,12 @@ font-weight: 700;
 color: #000000;
 }
 
+
+nav > ul > li > a:visited {
+color: #000000;
+}
+
+
 selector {
 margin: 0 auto;
 }
@@ -63,14 +70,20 @@ box-sizing: border-box;
 
 
 body {
-background-color: lightgray;
+background-color: #FFFFFF;
 font-family: 'Yanone Kaffeesatz', sans-serif;
 font-size: 16px;
 font-weight: 300;
 line-height: 1,6;
 color: #000000;
 }
-   
+
+footer {
+background-color:#ddaaf5;
+padding: 40px 0;
+text-align: center
+}
+
 h1, h2, h3, h4 {
 line-height: 1.4
 }
@@ -110,62 +123,28 @@ svg {
    
    
 a {
-color: #26596A;
+color: #16c46d;
 text-decoration: none;
 }
+
 a:hover, a:focus {
-color: #FF7A00;
+color: #0e6e3e;
 text-decoration: underline;
 }
 
 a:visited {
-color: #485154;
+color: #434343;
 }
+
 a:active {
-color: #277455;
+color: #48936e;
 }
-   
 
 
-/* buttons */
 
 
-.button {
-    display: inline-block; 
-    background-color: #FF7A00;
-    color: #ffffff;
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #434343;
-    transition: 0.2s opacity;
-    transition-duration: 0.2s;
-    transition-property: opacity;
-    }
 
-.button:hover {
-    opacity: 0.8;
-    text-decoration: none;
-    }
 
-.button:active {
-    color: #277455
-    }
-
-.button.contact {
-    background-color: transparent;
-    color: #FF7A00;
-    text-transform: uppercase;
-    border: 2px solid #FF7A00;
-    }
-
-.button.contact:hover {
-    background-color: #FF7A00;
-    color: #ffffff;
-    }
-   
-     
-   
 /* Layout styling */
 
 .container {
@@ -181,14 +160,14 @@ color: #277455;
     }
 
 #hero h1 {
-    text-align: left;
+    text-align: center;
     margin: 0;
     padding: 0.67em 0;
     }
 
 #hero {
-    background-color: greenyellow;
-    padding: 20px 0;
+    background-color: #f5f36e;
+    padding: 40 0px;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -203,11 +182,7 @@ color: #277455;
     }
    
    
-footer {
-    background-color:greenyellow;
-    padding: 40px 0;
-    text-align: center
-    }
+
 
 .socials {
     margin: 40px;
@@ -221,6 +196,45 @@ footer {
 .icon {
     width: 48px;
     }
+
+
+/* buttons */
+
+
+.button {
+    display: inline-block; 
+    background-color: #16c46d;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #434343;
+    transition: 0.2s opacity;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    }
+
+.button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    }
+
+.button:active {
+    color: #48936e
+    }
+
+.button.contact {
+    background-color: transparent;
+    color: #16c46d;
+    text-transform: uppercase;
+    border: 2px solid #16c46d;
+    }
+
+.button.contact:hover {
+    background-color: #0e6e3e;
+    color: #ffffff;
+    }
+   
+     
    
    
 /* animation */
