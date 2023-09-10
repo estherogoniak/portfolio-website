@@ -22,29 +22,34 @@ src: url('../kaffee/YanoneKaffeesatz-Regular.ttf') format('truetype');
 
 }
 
+
+html {
+    scroll-behavior:smooth
+}
+
 header {
 position: fixed;
 width: 100%;
 background-color: #ddaaf5;
-text-align: center;
 padding: 10px 0;
 box-shadow: 0 0 35px rgba(0, 0, 0, 0.3)  ; -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.3)  ; -moz-box-shadow: 0 0 35px rgba(0, 0, 0, 0.3)  ; 
 z-index: 11;
+padding: 10px 0 4px;
 }
+
+
 
 main {
 padding-top: 95px;
 }
 
+
 nav > ul {
 list-style-type: none;
 padding: 0;
+margin: 0;
 }
 
-
-nav > ul > li {
-display: inline-block;
-}
 
 nav > ul > li > a {
 padding: 0 15px;
@@ -59,6 +64,41 @@ color: #000000;
 }
 
 
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+  
+.navtoggle, .navtoggle.responsive {
+position: relative;
+}
+  
+.navtoggle li .icon {
+padding-right: 0;
+position: absolute;
+right: 0;
+top: 2px;
+font-size: 20px;
+}
+
+.navtoggle.responsive li  {
+    display: block;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+  
+.navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,127,80,0.5);
+}
+  
+.navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+}
+
+  
 selector {
 margin: 0 auto;
 }
@@ -139,10 +179,6 @@ color: #434343;
 a:active {
 color: #48936e;
 }
-
-
-
-
 
 
 /* Layout styling */
@@ -287,33 +323,46 @@ color: #48936e;
         padding: 0 0px;
          display: block;
         margin: 0 auto;
-     }
-     [class*="col-"] {
-      float: left;
-      padding: 10px;
+    }
+    
+    [class*="col-"] {
+    float: left;
+    padding: 10px;
     }
        
     .col-md-6 {
-      width: 50%;
-      
+    width: 50%;
     }
-
-
 
     [class*="col-"] {
-      float: left;
+    float: left;
     }
-        
-     .container .row::after {
-      content: "";
-      clear: both;
-      display: table;
-
-
+            
+    .container .row::after {
+    content: "";
+    clear: both;
+    display: table;
     }
 
+    nav > ul > li {
+    display: inline-block;
     }
 
+    nav > ul {
+        margin: 1em 0;
+    }
+
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child { 
+        display: none;
+    }
+
+
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -327,7 +376,16 @@ Medium devices (640px and larger)
             float: right;
             margin-top: 4px;
             }
-    }
+        nav > ul > li {
+            display: inline-block;
+            }
+        main {
+            padding-top: 56px;
+        }
+
+        }
+        
+    
 
 /* ==============================
 Large devices (1024px or larger)
@@ -348,6 +406,10 @@ Large devices (1024px or larger)
             margin-left: auto;
             margin-right: auto;
             }
+        .navtoggle li:last-child {
+            display: none;
+            }
+      
     }
 
 /* ==============================
@@ -357,6 +419,9 @@ X-large devices (1440px or larger)
         body {
             font-size: 18px;
             }
+        .navtoggle li:last-child {
+            display: none;
+            }
     }
 
 /* ==============================
@@ -365,5 +430,9 @@ Extra-large devices (1920px or larger)
     @media only screen and (min-width: 1920px) {
         body {
             font-size: 18px;
+            }
+            
+        .navtoggle li:last-child {
+            display: none;
             }
     }
