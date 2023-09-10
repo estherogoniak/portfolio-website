@@ -8,18 +8,22 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="img/favicon.ico" rel="shortcut icon" />
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/565cb3ebfc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
+            <div class="navtoggle" id="myNavtoggle"></div>
             <img class="logo" src="Esther Ogoniak UI Design Logo.svg" alt="logo">
             <nav>
                 <ul>
                 <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" onclick="menuToggle()" >Contact</a></li> 
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -68,7 +72,7 @@
                <div class="row">
                 <div class="col-md-6 col-lg-7"> 
                 <picture>
-                                <source srcset="img\world of flavors\img-wof-present.png"(max-width:767px)>
+                                <source (max-width:767px) srcset="img\world of flavors\img-wof-present.png"> 
                                 <img src="img\world of flavors\img-wof-present.png" alt="project World of Flavors">
                                 <div class="row"></div>
                   </picture>
@@ -721,6 +725,12 @@
         </div>
 
     </footer>
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+    </script>
 
     <script src="js/scripts.js"></script>
     
