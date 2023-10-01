@@ -14,18 +14,18 @@
 <body>
     <header>
         <div class="container">
-            <div class="navtoggle" id="myNavtoggle"></div>
-            <img class="logo" src="icons\Logo.svg" alt="logo">
-            <nav>
-                <ul>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html"><img src="icons\Logo.svg" alt="logo" style="max-width: 50px"></a>
+                <nav>
+                    <ul>
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact" onclick="menuToggle()" >Contact</a></li> 
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div> 
         </div>
-
     </header>
 
     <main>
@@ -41,22 +41,16 @@
 
         <div class="container" >
             <div class="row">
-                <div class="col-sm-4" .col-sm-4>
+                <div class="col-md-6">
                     <picture>
                         <source (max-width:767px) srcset="img/made in cologne/img-mic-present2.png">
                         <img src="img/made in cologne/img-mic-present2.png" alt="project Made in Cologne">
                     </picture>
                 </div>
-                <div class="col-sm-4" .col-sm-4>
+                <div class="col-md-6">
                     <p>Here you get an insight into my way of working with the mobile app "Made in Cologne".</p>
                     <p>For this project I created the concept, the UX and the UI design. The purpose of the app is to combine the functions of website, online store and museum guide. The goal was an optimal design for Android and iOS users.</p>
-                </div>
-                <div class="col-sm-4" .col-sm-4>
-                    <picture>
-                        <source (max-width:767px) srcset="img\made in cologne\img-mic-workprocess.png">
-                        <img src="img\made in cologne\img-mic-workprocess.png" alt="image work process">
-                    </picture>
-                </div>  
+                </div> 
             </div>
         </div>
         
