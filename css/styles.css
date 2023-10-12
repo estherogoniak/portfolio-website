@@ -103,21 +103,45 @@ img {
 }
 
 
-
-#projectright h3 {
+#projectright1 h3 {
     text-align: right;
 }
 
-#projectleft h3 {
-    text-align: left;
+#projectright2 h3 {
+    text-align: right;
 }
 
-#projectright p {
+#projectright1 p {
     text-align: left;
     padding-left: 10px;
 }
 
-#projectleft p {
+#projectright2 p {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#projectleft1 h3 {
+    text-align: right;
+}
+
+#projectleft2 h3 {
+    text-align: left;
+}
+
+#projectleft3 h3 {
+    text-align: left;
+}
+
+#projectleft1 p {
+    text-align: left;
+}
+
+#projectleft2 p {
+    text-align: left;
+}
+
+#projectleft3 p {
     text-align: left;
 }
 
@@ -288,7 +312,7 @@ html {
 
 .button {
     display: inline-block; 
-    background-color:#EBB885;
+    background-color:#AE50BA;
     font-weight: 400;
     color: #ffffff;
     padding: 10px;
